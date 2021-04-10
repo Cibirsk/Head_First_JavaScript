@@ -1,5 +1,4 @@
 let aleaPosition= Math.floor(Math.random() * 7);
-console.log(aleaPosition);
 
 let a,b,c;
 
@@ -11,4 +10,23 @@ if(aleaPosition === 0){
     a=aleaPosition-1;
     b=aleaPosition;
     c=aleaPosition+1;
+}
+
+let guess=0;
+let totGuess=0;
+let hit=0;
+let isSunk=false;
+
+while(isSunk === false){
+    guess= prompt(" chiffre entre 0 et 6: ");
+
+    if(guess <0 || guess>6){
+        alert("entrez un chiffre valide");
+    }
+
+    if(guess >=0 || guess<=6){
+    totGuess +=1;
+    }
+
+
 }
