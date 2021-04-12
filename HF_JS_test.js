@@ -1,18 +1,13 @@
-var word = "bottles";
-var count = 3;
+function phrase(){
+    let word1=["Un", "Deux","Trois","Quatre","Cinq"];
+    let word2=["petit","grand","gros","gentil","méchant"];
+    let word3=["chat","chien","loup","lapin","cerf"];
 
-while (count > 0) {
-    console.log(count + " " + word + " of beer on the wall");
-    console.log(count + " " + word + " of beer,");
-    console.log("Take one down, pass it around,");
-    count = count - 1;
-    if(count===1){
-        word="bottle";
-    }
+    let ranWord1= word1[Math.floor(Math.random() * word1.length)];
+    let ranWord2= word2[Math.floor(Math.random() * word2.length)];
+    let ranWord3= word3[Math.floor(Math.random() * word3.length)];
 
-    if (count > 0) {
-        console.log(count + " " + word + " of beer on the wall.");
-    } else {
-        console.log("No more " + word + " of beer on the wall.");
-    }
+    return ranWord1 + " " + ranWord2 + " " + ranWord3;
 }
+
+console.log(phrase());
