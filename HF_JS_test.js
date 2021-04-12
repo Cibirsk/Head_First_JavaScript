@@ -23,7 +23,7 @@ console.log(`numbers tests: ${scores.length}`);
 console.log(`The hightest score is: ${hightest}`);
 console.log(`solutions with the hightest: ${result}`);
 
-
+/*
 var products = ["Choo Choo Chocolate", "Icy Mint", "Cake Batter","Bubblegum"];
 var hasBubbleGum = [false,false,false,true];
 var i = 0;
@@ -36,3 +36,4 @@ while (i < hasBubbleGum.length){
 }
 
 
+*/
