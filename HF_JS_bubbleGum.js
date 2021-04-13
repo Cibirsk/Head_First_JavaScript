@@ -1,21 +1,26 @@
 function printHighScore(arrScores,arrCost){
     let result=[];
     let hightest=0;
-    let bestValue=0;
-    let bestValueIndex=[];
+    let highCost=0;
+
     for(let i=0;i<arrScores.length;i++){
         if(arrScores[i]>=hightest){
             hightest=arrScores[i];
         }
     }
 
-    for(let i=0;i<arrScores.length;i++){
-        if(arrScores[i] == hightest){
-            result.push(i);
-            bestValueIndex.push()
+    for(let i=0;i<arrCost.length;i++){
+        if(arrCost[i]>highCost){
+            highCost=arrCost[i];
         }
-}
+    }
 
+    for(let i=0;i<arrScores.length;i++){
+        if(arrScores[i] == hightest && arrCost[i] < highCost){
+            result.push(i);
+            highCost=arrCost[i];
+        }
+    }
 
     return `The numbers tests are:  ${arrScores.length} ,
     the hightest score is:  ${hightest}
