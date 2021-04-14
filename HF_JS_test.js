@@ -10,4 +10,22 @@ function makeCar(){
     let randCouleur= Math.floor(Math.random() * couleur.length);
     let randAnnee= Math.floor(Math.random() * annee.length);
     let randConvertible= Math.floor(Math.random() * convertible.length);
+
+    let car={
+        marque: marque[randMarque],
+        passager: passager[randPassager],
+        couleur: couleur[randCouleur],
+        annee: annee[randAnnee],
+        convertible: convertible[randConvertible]
+    }
+    return car;
 }
+
+function afficheCar(car){
+    console.log("your new car is a " + car.marque + " , " + car.passager + " places " + 
+    " , " + car.couleur + " , " + car.annee + " , convertible: " + car.convertible);
+}
+
+let yourNewCar= makeCar();
+
+afficheCar(yourNewCar);
