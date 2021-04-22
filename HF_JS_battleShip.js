@@ -1,4 +1,5 @@
 function init(){
+
     let view={
         displayMessage: function(msg){
             let messageArea = document.getElementById("messageArea");
@@ -20,7 +21,6 @@ function init(){
     view.displayHit("B2");
     view.displayMiss("C5");
     view.displayHit("C6");
-
     view.displayMessage("test message");
 }
 
