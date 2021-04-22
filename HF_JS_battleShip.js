@@ -15,12 +15,12 @@ function init(){
         }
     };
 
-    view.displayMiss("A0");
-    view.displayHit("D4");
-    view.displayMiss("F5");
-    view.displayHit("B2");
-    view.displayMiss("C5");
-    view.displayHit("C6");
+    view.displayMiss("00");
+    view.displayHit("34");
+    view.displayMiss("55");
+    view.displayHit("12");
+    view.displayMiss("25");
+    view.displayHit("26");
     view.displayMessage("test message");
 }
 
